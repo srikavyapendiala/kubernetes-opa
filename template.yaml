@@ -18,6 +18,6 @@ spec:
       rego: |
         package k8salwaysdeny
         violation[{"msg": msg}] {
-          1 > 0
+          1 > 2
           msg := input.parameters.message
         }
